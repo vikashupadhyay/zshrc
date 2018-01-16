@@ -96,34 +96,6 @@ export NVM_DIR="$HOME/.nvm"
 alias ide="open . -a /Applications/IntelliJ\ IDEA.app"
 #Tunnel and ssh alias
 #dev
-alias dev-web='sudo ssh -L 7001:10.210.145.71:22 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias dev-svc='sudo ssh -L 7011:10.210.148.54:22 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias dev-sql='sudo ssh -L 7010:10.210.146.110:3389 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias dev-pg='sudo ssh -L 7432:dev-tenant5-pg.cl6zsmowtx4w.us-east-1.rds.amazonaws.com:5432 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias dev-web-ssh='ssh centos@localhost -i ~/.ssh/PPVNATDefault.pem -p 7001 -o StrictHostKeyChecking=no'
-alias dev-svc-ssh='ssh centos@localhost -i ~/.ssh/PPVNATDefault.pem -p 7011 -o StrictHostKeyChecking=no'
-alias dev-job='sudo ssh -L 7004:10.210.148.178:22 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias dev-job-ssh='ssh hadoop@localhost -i ~/.ssh/PPVNATDefault.pem -p 7004 -o StrictHostKeyChecking=no'
-#QA
-alias qa-web='sudo ssh -L 7011:10.210.145.25:22 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias qa-svc='sudo ssh -L 7013:10.210.148.42:22 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias qa-sql='sudo ssh -L 3434:10.210.146.42:1433 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias qa-pg='sudo ssh -L 5432:qa-tenant5-pg.cl6zsmowtx4w.us-east-1.rds.amazonaws.com:5432 -i ~/.ssh/PPVNATDefault.pem ec2-user@52.4.205.145'
-alias qa-web-ssh='ssh centos@localhost -i ~/.ssh/PPVNATDefault.pem -p 7011 -o StrictHostKeyChecking=no'
-alias qa-svc-ssh='ssh centos@localhost -i ~/.ssh/PPVNATDefault.pem -p 7013 -o StrictHostKeyChecking=no'
-
-export PATH=$HOME/.rbenv/shims:$PATH
-export PATH=/Users/kvikas/spark-2.0.0-bin-hadoop2.7/bin:$PATH
-export BENERATOR_HOME="/Users/kvikas/Downloads/databene-benerator-0.9.8"
-export SPARK_HOME=/Users/kvikas/spark-2.0.0-bin-hadoop2.7
-export JAVA_HOME=$(/usr/libexec/java_home)
-alias dev-jenkins-pipeline='ssh -L 7005:10.210.147.83:8080 ec2-user@52.4.205.145 -i ~/.ssh/ppvNATDefault.pem'
-alias dev-jenkins='ssh -L 7006:10.210.147.83:22 ec2-user@52.4.205.145 -i ~/.ssh/ppvNATDefault.pem'
-alias qa-jenkins='ssh -L 7006:10.210.147.111:22 ec2-user@52.4.205.145 -i ~/.ssh/ppvNATDefault.pem'
-alias qa-jenkins-pipeline='ssh -L 7005:10.210.147.111:8080 ec2-user@52.4.205.145 -i ~/.ssh/ppvNATDefault.pem'
-alias qa-jenkins-ssh='ssh centos@localhost -i ~/.ssh/PPVNATDefault.pem -p 7006   -o StrictHostKeyChecking=no'
-alias dev-jenkins-ssh='ssh centos@localhost -i ~/.ssh/PPVNATDefault.pem -p 7006   -o StrictHostKeyChecking=no'
-
 
 export GCM_KEY="AIzaSyDT_hsP_SFn862ffF2T-ofbUkHlRGsDJug"
 export ADJUVANT_SERVER_URL="http://localhost:8083"
