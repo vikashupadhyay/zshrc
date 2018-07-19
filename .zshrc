@@ -60,8 +60,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kvikas/bin:/usr
 
 export GOPATH=$HOME/workSpace
 export PATH=$PATH:$GOPATH/bin
-source $ZSH/oh-my-zsh.sh
-source ~/Downloads/mck.zsh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -87,7 +85,6 @@ source ~/Downloads/mck.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gst="git status"
-alias price="~/workSpace/src/git.periscope-solutions.com/price/"
 alias gbd="gradle clean build"
 alias gco="git checkout"
 alias gl="git log"
